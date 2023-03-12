@@ -130,3 +130,4 @@ let temp = () => {
 };
 
 const intervalID = setInterval(temp, 500);
+console.log('version 4 change - to test automatic updates');
