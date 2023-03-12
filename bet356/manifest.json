@@ -20,8 +20,8 @@
     }],
     "browser_specific_settings": {
         "gecko": {
-            "id": "kyleduffy_83@hotmail.com",
-            "update_url": "https://example.com/updates.json"
+            "id": "bet356@version_0.3",
+            "update_url": "https://kduffy93.github.io/addonUpdateManifests/bet356/updates.json"
         }
     }
 

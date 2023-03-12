@@ -3,11 +3,15 @@
         "{kyleduffy_83@hotmail.com}": {
             "updates": [{
                     "version": "0.1",
-                    "update_link": "https://example.com/addon-0.1.xpi"
+                    "update_link": "https://kduffy93.github.io/addonUpdateManifests/bet356/xpiFiles/bet365.xpi"
                 },
                 {
                     "version": "0.2",
-                    "update_link": "http://example.com/addon-0.2.xpi"
+                    "update_link": "https://kduffy93.github.io/addonUpdateManifests/bet356/xpiFiles/kyleduffy_83%40hotmail.com.xpi"
+                },
+                {
+                    "version": "0.3",
+                    "update_link": "https://kduffy93.github.io/addonUpdateManifests/bet356/xpiFiles/bet356@version_0.3.xpi"
                 }
             ]
         }
