@@ -1,0 +1,1 @@
+Install/Update-to Latest Version: https://kduffy93.github.io/addonUpdateManifests/bet356/xpiFiles/v4kyleduffy_83%40hotmail.com.xpi
