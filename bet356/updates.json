@@ -1,0 +1,15 @@
+{
+    "addons": {
+        "{kyleduffy_83@hotmail.com}": {
+            "updates": [{
+                    "version": "0.1",
+                    "update_link": "https://example.com/addon-0.1.xpi"
+                },
+                {
+                    "version": "0.2",
+                    "update_link": "http://example.com/addon-0.2.xpi"
+                }
+            ]
+        }
+    }
+}
