@@ -61,7 +61,13 @@ let temp = () => {
 
 
         let field = document.getElementsByClassName("ml18-CommonAnimations_H2Text ")[0];
-        let parentField;
+
+
+        
+        let footballField = document.getElementsByClassName("ml12-CommonAnimations_H2Text")[0];
+        let otherfootballField = document.getElementsByClassName("ml12-CommonAnimations_H3Text")[0];
+
+                let parentField;
 
         if (!field) {
             field = document.getElementById('inningsStats-inning').childNodes[0];
@@ -89,14 +95,14 @@ let temp = () => {
         } else if (field.textContent.includes('Review')) {
             if (parentField.classList.contains('ml16-BaseballFieldView_Opaque')) {
 
-                console.log(alreadySpoken);
+               
 
                 if (!alreadySpoken) {
                     if (!synth.speaking) {
                         saySentense(`${teamName1}`);
                     }
                 }
-                console.log(alreadySpoken);
+                
 
 
                 if (document.title == `TO - ${teamName1}`) {
@@ -115,7 +121,26 @@ let temp = () => {
 
             }
 
-        } else {
+        } else if (footballField.textContent.includes('TV Timeout') || otherfootballField.textContent.includes('Timeout')) {
+            console.log("its a football game")
+            console.log(field.textContent);
+            if (!alreadySpoken) {
+                if (!synth.speaking) {
+                    saySentense(`${teamName1}`);
+                }
+            }
+
+
+            if (document.title == `TO - ${teamName1}`) {
+                document.title = `${teamName1}`;
+                border.style.borderColor = 'red';
+            } else {
+                document.title = `TO - ${teamName1}`;
+                border.style.borderColor = 'orange';
+            }
+
+        }
+        else {
             console.log(field.textContent);
             border.style.borderColor = "green";
             document.title = `${teamName1}`;
@@ -130,4 +155,4 @@ let temp = () => {
 };
 
 const intervalID = setInterval(temp, 500);
-console.log('version 4 change - to test automatic updates');
+console.log('version 5 change - added football compatability');
